@@ -10,7 +10,7 @@ ARCH = x86
 CROSS_COMPILE = i586-poky-linux-
 APP_INSDUMP = insdump_tester
 APP_RMSDUMP = rmdump_tester
-# obj-m += dump_stack_dev.o
+
 
 all:
 	$(CC) -Wall -g -o $(APP_INSDUMP) insdump_test.c --sysroot=$(SROOT) -lpthread -Wall
